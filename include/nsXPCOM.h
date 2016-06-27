@@ -29,4 +29,7 @@ NS_InitXPCOM2(nsIServiceManager* *result,
               nsIFile* binDirectory,
               nsIDirectoryServiceProvider* appFileLocationProvider);
 
+XPCOM_API(nsresult)
+NS_ShutdownXPCOM(nsIServiceManager* servMgr);
+
 #endif

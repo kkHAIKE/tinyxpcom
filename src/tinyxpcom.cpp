@@ -290,6 +290,12 @@ NS_InitXPCOM2(nsIServiceManager* *,
     return NS_OK;
 }
 
+EXPORT_XPCOM_API(nsresult)
+NS_ShutdownXPCOM(nsIServiceManager* servMgr)
+{
+    return NS_OK;
+}
+
 NS_COM_GLUE nsresult
 NS_NewGenericModule2(nsModuleInfo const *info, nsIModule* *)
 {
